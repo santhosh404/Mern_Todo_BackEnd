@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "npm build",
+    "prod": "node backend/server.js",
     "devStart": "nodemon backend/server.js"
   },
   "eslintConfig": {
