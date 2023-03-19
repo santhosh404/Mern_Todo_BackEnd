@@ -1,0 +1,104 @@
+
+POST http://localhost:4000/users/register
+Content-Type: application/json
+
+{
+    "firstName": "santhosh",
+    "lastName": "a",
+    "email": "santhosh@gmail.com",
+    "password": "233"
+}
+
+###
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "email": "devi@gmail.com",
+    "password": "123"
+}
+
+
+###
+POST http://localhost:4000/users/userDetails
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODk0NDMzOX0.lcMt79Bn8LFhnVhT2sN8c_O71s0KIZVXYju1oAJ7I6E"
+}
+
+###
+POST http://localhost:4000/users/forgot-password
+Content-Type: application/json
+
+{
+    "email": "sumathi@gmail.com"
+}
+
+###
+GET http://localhost:4000/users/reset-password/63f4fe9707583a2dcb13ece8/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ.eyJlbWFpbCI6InN1bWF0aGlAZ21haWwuY29tIiwiaWQiOiI2M2Y0ZmU5NzA3NTgzYTJkY2IxM2VjZTgiLCJpYXQiOjE2NzcyMjM0MzR9.cTtl2MaQKYvebS1-rZX4spxwr8xvwzf2aPnX6uJpONE
+
+###
+PATCH http://localhost:4000/users/reset-password/63f4fe9707583a2dcb13ece8/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1bWF0aGlAZ21haWwuY29tIiwiaWQiOiI2M2Y0ZmU5NzA3NTgzYTJkY2IxM2VjZTgiLCJpYXQiOjE2NzcyMTU4Nzd9.YQ27Mep-8TbruEgmgz0BM7rb3hpHte33QKW8oAWZLno
+Content-Type: application/json
+
+{
+    "password" : "Pillir"
+}
+
+###
+GET http://localhost:4000/scheduled
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODg1Nzc1NX0.HJD1B3egytGSr99C-05PRBx-RMHVM-E_3ERwaY1ak4M
+
+
+
+###
+GET http://localhost:4000/searchTodo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODg1Nzc1NX0.HJD1B3egytGSr99C-05PRBx-RMHVM-E_3ERwaY1ak4M
+Content-Type: application/json
+
+{
+    "todo":"a"
+}
+
+###
+GET http://localhost:4000/completed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODg1ODU1M30.HfjgryHrRDlD6p56KnHHKavl9NkWW3RS8J-DP1R3tGE
+
+###
+PATCH http://localhost:4000/makeCompleted/6412a8af6bda1f3a42b173ff
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODg1ODU1M30.HfjgryHrRDlD6p56KnHHKavl9NkWW3RS8J-DP1R3tGE
+
+
+###
+GET http://localhost:4000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDIwMTM3ZGQ2ZjUwMDE5OTcyMTE0ZiIsImlhdCI6MTY3ODU0NDAwMn0._c-osEZ94flaGZaL2SFF2wCkFluydQjd8H91wENuWAg
+
+###
+POST http://localhost:4000/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGVhZjZmOThlZTFiZTMyOThiZDNlYyIsImlhdCI6MTY3ODk0NDMzOX0.lcMt79Bn8LFhnVhT2sN8c_O71s0KIZVXYju1oAJ7I6E
+Content-Type: application/json
+
+{   
+    "id": "640eaf6f98ee1be3298bd3ec",
+    "name": "Make This too!",
+    "description": "Make order",
+    "scheduledAt": "2023-02-09",
+    "isCompleted": false
+}
+
+###
+PATCH  http://localhost:4000/63d0e9161f6d65f9aa8eb3b1
+Content-Type: application/json
+
+{
+    "name": "New Name",
+    "isCompleted": true
+}
+
+###
+DELETE http://localhost:4000/63d0e8161f6d65f9aa8eb3af
+
+###
+
+
