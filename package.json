@@ -9,6 +9,7 @@
     "moment-timezone": "^0.5.40",
     "mongodb": "^5.1.0",
     "mongoose": "^6.8.4",
+    "dotenv": "^16.0.3",
     "nodemailer": "^6.9.1"
   },
   "scripts": {
@@ -35,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^16.0.3",
+    
     "nodemon": "^2.0.20"
   }
 }
