@@ -95,7 +95,7 @@ router.post("/forgot-password", async (req, res) => {
                 from: 'no-reply@gmail.com',
                 to: email,
                 subject: 'ATODO - Reset your Password',
-                html: `<div><h1>Reset Your Password.</h1> <p>Please find the attached link and change your password by clicking the link!. Go ahead</p><br />https://merntask-d91q.onrender.com/users/reset-password/${oldUser._id}/${token}</div>` 
+                html: `<div><h1>Reset Your Password.</h1> <p>Please find the attached link and change your password by clicking the link!. Go ahead</p><br />https://merntask-d91q.onrender.com/#/users/reset-password/${oldUser._id}/${token}</div>` 
             };
               
               transporter.sendMail(mailOptions, function(error, info){
