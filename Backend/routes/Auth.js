@@ -33,9 +33,10 @@ router.post("/register", async (req, res) => {
 
 router.post("/login", async (req, res) => {
     const {email, password} = req.body
-
+    console.log(email, password)
     try {
         const isExists = await usersSchema.findOne({email})
+        console.log(isExists)
         if(!isExists) return res.json({status: "Email ID not found"})
 
         if(await bcrypt.compare(password, isExists.password)) {
